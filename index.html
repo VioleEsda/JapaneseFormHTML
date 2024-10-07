@@ -9,10 +9,11 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            height: 100vh;
+            min-height: 100vh; /* Mengubah height menjadi min-height agar footer tetap berada di bawah */
             display: flex;
-            justify-content: center; /* Menempatkan form di tengah secara horizontal */
-            align-items: center; /* Menempatkan form di tengah secara vertikal */
+            flex-direction: column; /* Mengatur agar footer berada di bawah */
+            justify-content: center;
+            align-items: center;
             background-color: #f4f4f4;
         }
 
@@ -66,6 +67,17 @@
         input[type="submit"]:hover {
             background-color: #1abc9c;
         }
+
+        /* Footer styling */
+        footer {
+            margin-top: auto; /* Menempatkan footer di bagian bawah halaman */
+            width: 100%;
+            text-align: center;
+            background: linear-gradient(135deg, #6a5acd, #483d8b); /* Shading biru keunguan */
+            color: white;
+            padding: 10px 0;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
@@ -85,6 +97,11 @@
 
         <input type="submit" value="送信 (Submit)">
     </form>
+
+    <!-- Footer -->
+    <footer>
+        Copyright by Irvan allright reserved.
+    </footer>
 
 </body>
 </html>
