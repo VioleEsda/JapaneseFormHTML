@@ -9,10 +9,10 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            min-height: 100vh; /* Mengubah height menjadi min-height agar footer tetap berada di bawah */
             display: flex;
-            flex-direction: column; /* Mengatur agar footer berada di bawah */
-            justify-content: center;
+            flex-direction: column;
+            min-height: 100vh; /* Menggunakan min-height untuk memastikan footer selalu di bawah */
+            justify-content: center; /* Membuat konten tetap di tengah secara vertikal */
             align-items: center;
             background-color: #f4f4f4;
         }
@@ -32,6 +32,7 @@
             width: 350px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             color: white; /* Mengubah teks menjadi putih agar terlihat di atas gambar */
+            margin: 40px auto; /* Menambahkan margin atas untuk memberikan jarak dari atas */
         }
 
         label {
@@ -73,7 +74,7 @@
             margin-top: auto; /* Menempatkan footer di bagian bawah halaman */
             width: 100%;
             text-align: center;
-            background: linear-gradient(135deg, #6a5acd, #483d8b); /* Shading biru keunguan */
+            background: linear-gradient(135deg, #00f, #8a2be2, #ff69b4); /* Gradasi warna biru, ungu, dan pink */
             color: white;
             padding: 10px 0;
             font-size: 0.9em;
@@ -100,7 +101,7 @@
 
     <!-- Footer -->
     <footer>
-        Copyright by Irvan allright reserved.
+        Copyright by Irvan all right reserved.
     </footer>
 
 </body>
