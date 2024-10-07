@@ -79,6 +79,36 @@
             padding: 10px 0;
             font-size: 0.9em;
         }
+
+        /* Media queries untuk tampilan mobile */
+        @media (max-width: 600px) {
+            form {
+                width: 90%; /* Membuat form lebih lebar di tampilan mobile */
+                padding: 20px; /* Mengurangi padding di tampilan mobile */
+            }
+
+            h1 {
+                font-size: 1.5em; /* Mengurangi ukuran font pada heading */
+            }
+
+            input[type="text"], input[type="submit"] {
+                font-size: 0.9em; /* Mengurangi ukuran font input dan tombol di tampilan mobile */
+                padding: 8px; /* Mengurangi padding input dan tombol di tampilan mobile */
+            }
+        }
+
+        /* Media queries untuk tablet */
+        @media (min-width: 601px) and (max-width: 1024px) {
+            form {
+                width: 70%; /* Membuat form lebih lebar di tampilan tablet */
+                padding: 25px; /* Menyesuaikan padding di tampilan tablet */
+            }
+
+            h1 {
+                font-size: 1.8em; /* Mengatur ukuran font heading */
+            }
+        }
+
     </style>
 </head>
 <body>
