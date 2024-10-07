@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>フォームページ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center; /* Menempatkan form di tengah secara horizontal */
+            align-items: center; /* Menempatkan form di tengah secara vertikal */
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-image: url('f5f27448c036af645c27467c789ad759.gif'); /* Menambahkan background gambar GIF */
+            background-size: cover; /* Menutupi seluruh form dengan gambar */
+            background-position: center; /* Memastikan gambar berada di tengah */
+            padding: 30px 40px;
+            border-radius: 15px;
+            width: 350px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            color: white; /* Mengubah teks menjadi putih agar terlihat di atas gambar */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: white; /* Mengubah warna label menjadi putih */
+            font-size: 1.1em;
+        }
+
+        /* Menyelaraskan semua input dan tombol submit */
+        input[type="text"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            font-size: 1em;
+            box-sizing: border-box; /* Menjamin elemen termasuk padding dan border dalam lebar */
+        }
+
+        input[type="text"] {
+            background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang input transparan */
+        }
+
+        input[type="submit"] {
+            background-color: #16a085;
+            color: white;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1abc9c;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Form akan mengarahkan kembali ke index.html saat submit -->
+    <form action="Pertemuan 3MoreGood.html" method="GET">
+        <h1>日本語のフォーム</h1>
+
+        <label for="name">名前 (Nama):</label>
+        <input type="text" id="name" name="name" placeholder="あなたの名前を入力してください">
+
+        <label for="hobby">趣味 (Hobi):</label>
+        <input type="text" id="hobby" name="hobby" placeholder="あなたの趣味を入力してください">
+
+        <label for="job">職業 (Pekerjaan):</label>
+        <input type="text" id="job" name="job" placeholder="あなたの職業を入力してください">
+
+        <input type="submit" value="送信 (Submit)">
+    </form>
+
+</body>
+</html>
